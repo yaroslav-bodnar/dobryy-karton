@@ -1,0 +1,100 @@
+.button {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #ffffff;
+  background-color: #ff9d00;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px; }
+
+.header {
+  margin-top: 60px;
+  margin-bottom: 15px; }
+  .header__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .header__contacts__tel-1 {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 22px;
+      text-transform: uppercase;
+      padding-right: 15px;
+      margin-right: 15px;
+      border-right: solid 1px #cfcfd0; }
+    .header__contacts__tel-2 {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 22px;
+      text-transform: uppercase;
+      margin-right: 30px; }
+    .header__contacts__buttons {
+      width: 179px;
+      height: 45px; }
+      .header__contacts__buttons__phone {
+        margin: 8px 7px 12px 18px; }
+      .header__contacts__buttons__title {
+        margin: 8px 10px 10px 0px; }
+
+img {
+  max-width: 100%; }
+
+body {
+  margin: 0; }
+
+.main {
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 60px;
+  background: #373737 url(../img/main/main.fon.jpg) center no-repeat;
+  color: #ffffff;
+  z-index: 1; }
+  .main::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0; }
+  .main-img {
+    position: relative; }
+    .main-img::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      width: 390px;
+      height: 390px;
+      border: 1px solid #ffffff;
+      left: 50%;
+      margin-left: -195px;
+      border-radius: 50%; }
+  .main-text__title {
+    font-size: 41px;
+    font-weight: 700;
+    line-height: 42px;
+    font-family: "Roboto Bold";
+    margin-bottom: 20px; }
+  .main-text__subtitle {
+    font-weight: 700;
+    font-family: "Roboto Regular";
+    font-size: 28px;
+    font-weight: 400; }
+
+body {
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif; }

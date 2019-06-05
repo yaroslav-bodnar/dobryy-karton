@@ -1,0 +1,41 @@
+.main
+	position: relative
+	padding-top: 65px
+	padding-bottom: 60px
+	background: #373737 url(../img/main/main.fon.jpg) center no-repeat
+	color: $text-color-light
+	z-index: 1
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0, 0, 0, 0.6)
+		z-index: 0
+	&-img
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			z-index: -1
+			width: 390px
+			height: 390px
+			border: 1px solid #ffffff
+			left: 50%
+			margin-left: -195px
+			border-radius: 50%
+	&-text
+		&__title
+			font-size: 41px
+			font-weight: 700
+			line-height: 42px
+			font-family: "Roboto Bold"
+			margin-bottom: 20px
+		&__subtitle
+			font-weight: 700
+			font-family: "Roboto Regular"
+			font-size: 28px
+			font-weight: 400
