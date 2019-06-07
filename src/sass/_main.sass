@@ -1,8 +1,9 @@
-.main
+.hat
 	position: relative
 	padding-top: 65px
 	padding-bottom: 60px
 	background: #373737 url(../img/main/main.fon.jpg) center no-repeat
+	background-size: cover
 	color: $text-color-light
 	z-index: 1
 	&::before
@@ -33,9 +34,84 @@
 			font-weight: 700
 			line-height: 42px
 			font-family: "Roboto Bold"
-			margin-bottom: 20px
-		&__subtitle
+			margin-bottom: 15px
 			font-weight: 700
+		&__subtitle
 			font-family: "Roboto Regular"
 			font-size: 28px
 			font-weight: 400
+		&__form
+			background-color: rgba(#fff, 0.2)
+			padding: 30px
+			margin-top: 24px
+			&__title
+				font-family: "Roboto Light"
+				font-size: 20px
+				line-height: 30px
+				font-weight: 300
+				padding-right: 75px
+			&__important
+				font-family: "Roboto Bold"
+				font-size: 20px
+				line-height: 30px
+				font-weight: 700
+				text-transform: uppercase
+				display: block
+			&__tel
+				margin-top: 20px
+				margin-bottom: 10px
+				&__input
+					border-radius: 5px
+					padding: 23px 130px 23px 19px
+				&__submit
+					padding: 21px 20px 21px 20px
+					margin-left: 10px
+					display: inline-block
+				&-smoll
+
+
+.services
+	text-align: center
+	background-color: #f4f4f4
+	min-height: 514px
+	&__desc
+		margin-top: 50px
+		&__important-title
+			color: #f39003
+			font-family: "Roboto Bold"
+			font-size: 36px
+			font-weight: 900
+		&__important-subtitle
+			font-family: "Roboto Regular"
+			font-weight: 400
+			color: #373737
+			font-size: 16px
+	&__common
+		display: flex
+		justify-content: center
+		align-items: center
+		text-align: left
+		background-color: #fff
+		margin-top: 50px
+		min-height: 130px
+		&__img
+			min-width: 50px
+			margin: 0px 10px
+		&__text
+			font-family: "Roboto Light"
+			font-weight: 300
+			color: #373737
+			line-height: 20px
+			font-size: 15px
+			&__headline
+				font-family: "Roboto Bold"
+				font-size: 15px
+				font-weight: 700
+				color: #373737
+				line-height: 25px
+	&__production
+	&__samples
+	&__quality
+	&__insurance
+	&__stamp
+	&__supplements
