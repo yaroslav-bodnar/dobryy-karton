@@ -23,7 +23,7 @@ function conwert(done) {
 		.pipe(browserSync.stream());
 done();
 }
-// БРАУЗЕР АВТОМАТОМ НЕ ОБНОВЛЯЕТ!!!!!!!!!!!!!!!!!!!!!!!!!
+// БРАУЗЕР АВТОМАТОМ  МОЖЕТ НЕ ОБНОВЛЯТЬ, А ИНОГДА РАБОТАЕТ!!!!
 function browser(done) {
 	browserSync.init({
 		server: {

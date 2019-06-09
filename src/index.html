@@ -18,6 +18,11 @@
 	<!-- Custom styles for this template -->
 	<link rel="stylesheet" href="./css/style.css">
 
+	<!-- Animations -->
+	<link rel="stylesheet" href="./css/animate.css">
+	<script src="./js/wow.min.js"></script>
+	<script>new WOW().init();</script>
+
 	<!-- Fonts -->
 	<!-- <link rel="stylesheet" href="css/fonts_roboto.css"> -->
 
@@ -33,13 +38,13 @@
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-4">
-					<div class="header__logo">
+					<div class="header__logo animate">
 						<img src="./img/logo.jpg" alt="Добрый_картон">
 					</div>
 				</div>
 				<!-- /.col-4 -->
 				<div class="col-8">
-					<div class="header__contacts">
+					<div class="header__contacts animate">
 						<div class="header__contacts__tel-1">8 (347) 271-54-28</div>
 						<div class="header__contacts__tel-2">8 (937) 363-30-00</div>
 						<button class="header__contacts__buttons button">
@@ -63,13 +68,13 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-5">
-						<div class="hat-img">
+						<div class="hat-img wow bounceInLeft" data-wow-duration="2s">
 							<img src="./img/main/main.box.png" alt="Картон">
 						</div>
 					</div>
 					<!-- /.col-5 -->
 					<div class="col-7">
-						<div class="hat-text">
+						<div class="hat-text wow bounceInRight" data-wow-duration="2s">
 							<h1 class="hat-text__title">Производство упаковки из гофрокартона</h1>
 							<!-- /.hat-text__title -->
 							<div class="hat-text__subtitle">с доставкой по всей Украине</div>
@@ -204,6 +209,85 @@
 			<!-- /.dimming-popup-form__popup-form -->
 		</section>
 		<!-- /.dimming-popup-form -->
+
+		<section class="products">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="products__title wow bounceInUp" data-wow-delay="0.1s">наша продукция</div>
+						<div class="products__title-img wow bounceInUp" data-wow-delay="0.1s">
+							<img src="./img/main/products/line.png" alt="line">
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="products__box wow bounceInUp" data-wow-delay="0.5s">
+							<div class="products__box__img">
+								<img src="./img/main/products/carton_box_1.jpg" alt="carton_box_1">
+							</div>
+							<div class="products__box__text">
+								Гофрокороб 4-х клапанный
+							</div>
+							<div class="products__box__buttons">
+								<button class="button products__box__buttons__button1">Подробнее</button>
+								<button class="button products__box__buttons__button2">Получить расчет</button>
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="products__box wow bounceInUp" data-wow-delay="0.6s">
+							<div class="products__box__img">
+								<img src="./img/main/products/carton_box_2.jpg" alt="carton_box_2">
+							</div>
+							<div class="products__box__text">
+								Гофролоток
+							</div>
+							<div class="products__box__buttons">
+								<button class="button products__box__buttons__button1">Подробнее</button>
+								<button class="button products__box__buttons__button2">Получить расчет</button>
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="products__box wow bounceInUp" data-wow-delay="0.7s">
+							<div class="products__box__img">
+								<img src="./img/main/products/carton_box_3.jpg" alt="carton_box_3">
+							</div>
+							<div class="products__box__text">
+								Гофрокороб самосборный (сложная высечка)
+							</div>
+							<div class="products__box__buttons">
+								<button class="button products__box__buttons__button1">Подробнее</button>
+								<button class="button products__box__buttons__button2">Получить расчет</button>
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="products__box wow bounceInUp" data-wow-delay="0.8s">
+							<div class="products__box__img">
+								<img src="./img/main/products/carton_box_4.jpg" alt="carton_box_4">
+							</div>
+							<div class="products__box__text">
+							Листовой гофрокартон</div>
+							<div class="products__box__buttons">
+								<button class="button products__box__buttons__button1">Подробнее</button>
+								<button class="button products__box__buttons__button2">Получить расчет</button>
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.products -->
 
 	</main>
 	<footer>
