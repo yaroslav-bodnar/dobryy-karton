@@ -76,6 +76,9 @@ img {
 body {
   margin: 0; }
 
+input:focus, button:focus {
+  outline: none; }
+
 .hat {
   position: relative;
   padding-top: 65px;
@@ -224,6 +227,103 @@ body {
       display: inline-block;
       padding: 18px 28px 16px 25px;
       margin-left: 12px; }
+
+.individual-offer {
+  position: relative;
+  margin-top: 73px;
+  margin-bottom: 87px;
+  padding-top: 64px;
+  padding-bottom: 69px;
+  text-align: center;
+  background: #373737 url(../img/main/individual-offer/individual-offer-fon.jpg) center no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  z-index: 1; }
+  .individual-offer::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0; }
+  .individual-offer__title {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35px;
+    margin-bottom: 10px; }
+  .individual-offer__subtitle {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 35px;
+    margin-bottom: 32px; }
+  .individual-offer__form__label {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 17px; }
+  .individual-offer__form__input {
+    padding: 21px 120px;
+    border-radius: 5px;
+    margin-bottom: 12px; }
+  .individual-offer__form__button {
+    display: inline-block;
+    padding: 21px 30px;
+    margin-bottom: 5px; }
+  .individual-offer__small-text {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px; }
+
+.our-clients {
+  width: 940px;
+  margin: auto; }
+  .our-clients__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    color: #313131;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase; }
+  .our-clients__images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: justify;
+    align-content: space-between; }
+    .our-clients__images__img {
+      width: 212px;
+      height: 130px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-top: 33px; }
 
 .dimming-popup-form {
   position: fixed;
