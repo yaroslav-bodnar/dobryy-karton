@@ -15,22 +15,18 @@
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
 
+	<!-- Fonts -->
+	<!-- <link rel="stylesheet" href="css/fonts_roboto.css"> -->
+
 	<!-- Custom styles for this template -->
 	<link rel="stylesheet" href="./css/style.css">
 
 	<!-- Animations -->
 	<link rel="stylesheet" href="./css/animate.css">
-	<script src="./js/wow.min.js"></script>
-	<script>new WOW().init();</script>
 
-	<!-- Fonts -->
-	<!-- <link rel="stylesheet" href="css/fonts_roboto.css"> -->
-
-	<!-- jQuery -->
-	<script src="./js/jquery-3.4.1.min.js"></script>
-	
-	<!-- JavaScript -->
-	<script src="./js/script.js"></script>
+	<!-- slick-slider -->
+	<link rel="stylesheet" href="./slick/slick.css">
+	<link rel="stylesheet" href="./slick/slick-theme.css">
 </head>
 
 <body>
@@ -100,6 +96,7 @@
 			</div>
 		</section>
 		<!-- /.hat -->
+
 
 
 		<section class="services">
@@ -188,6 +185,7 @@
 		<!-- /.services -->
 
 
+
 		<section class="dimming-popup-form">
 			<div class="dimming-popup-form__popup-form">
 				<div class="dimming-popup-form__popup-form__title">Форма обратной связи</div>
@@ -211,6 +209,7 @@
 			<!-- /.dimming-popup-form__popup-form -->
 		</section>
 		<!-- /.dimming-popup-form -->
+
 
 
 		<section class="products">
@@ -293,6 +292,7 @@
 		<!-- /.products -->
 
 
+
 		<section class="individual-offer">
 			<div class="container">
 				<div class="row">
@@ -334,6 +334,53 @@
 			<!-- /.container -->
 		</section>
 		<!-- /.individual-offer -->
+
+
+
+		<section class="slider">
+			<div class="container">
+				<div class="row">
+					<div class="col-7">
+						<div class="slider__photo-top">
+							<img src="./img/main/sliders/slider-1.jpg" alt="#">
+							<img src="./img/main/sliders/slider-2.jpg" alt="#">
+							<img src="./img/main/sliders/slider-3.jpg" alt="#">
+							<img src="./img/main/sliders/slider-4.jpg" alt="#">
+							<img src="./img/main/sliders/slider-5.jpg" alt="#">
+							<img src="./img/main/sliders/slider-6.jpg" alt="#">
+							<img src="./img/main/sliders/slider-7.jpg" alt="#">
+							<img src="./img/main/sliders/slider-8.jpg" alt="#">
+							<img src="./img/main/sliders/slider-9.jpg" alt="#">
+							<img src="./img/main/sliders/slider-10.jpg" alt="#">
+						</div>
+						<div class="slider__photo-bottom">
+							<img src="./img/main/sliders/slider-1.jpg" alt="#">
+							<img src="./img/main/sliders/slider-2.jpg" alt="#">
+							<img src="./img/main/sliders/slider-3.jpg" alt="#">
+							<img src="./img/main/sliders/slider-4.jpg" alt="#">
+							<img src="./img/main/sliders/slider-5.jpg" alt="#">
+							<img src="./img/main/sliders/slider-6.jpg" alt="#">
+							<img src="./img/main/sliders/slider-7.jpg" alt="#">
+							<img src="./img/main/sliders/slider-8.jpg" alt="#">
+							<img src="./img/main/sliders/slider-9.jpg" alt="#">
+							<img src="./img/main/sliders/slider-10.jpg" alt="#">
+						</div>
+					</div>
+					<!-- /.col-7 -->
+					<div class="col-5">
+						<div class="slider__text">
+							<div class="slider__text__title">Производство</div>
+							<div class="slider__text__description">Современное оборудование позволяет произ- водить до 5 миллионов квадратных метров гофрокартона ежемесячно. Гофрокороба и лотки производятся по ГОСТу или чертежам заказчика. Досконально прорабатываем конструкции коро- бов и составы сырья, учитывая условия хранения, транспортировки и производства вашей продукции. Возможно нанесение цветной флексопечати на поверхность коробов.</div>
+						</div>
+					</div>
+					<!-- /.col-5 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.sliders -->
+
 
 
 		<section class="our-clients">
@@ -382,10 +429,60 @@
 				</div>
 			</div>
 		</section>
+
+
 	</main>
 	<footer>
 		
 	</footer>
+
+
+
+
+
+
+
+
+
+
+
+	<!-- ====================SCRIPTS============================ -->
+	<!-- ======================================================= -->
+	<script src="./js/wow.min.js"></script>
+	<script>new WOW().init();</script>
+
+	<!-- jQuery -->
+	<script src="./js/jquery-3.4.1.min.js"></script>
+	
+	<!-- JavaScript -->
+	<script src="./js/script.js"></script>
+
+	<!-- slick-slider -->
+	<script src="./slick/slick.js"></script>
+	<script>
+		$('.slider__photo-top').slick({
+			arrows: false, 
+			// стрелка нужна или нет
+			slidesToShow: 1,
+			// сколько слайд картинок показывать
+			slidesToScroll: 1,
+			// сколько слайд картинок перелистывать
+			asNavFor: '.slider__photo-bottom'
+			// связка с нижним слайдером
+		});
+		$('.slider__photo-bottom').slick({
+			arrows: true, 
+			// стрелка нужна или нет
+			slidesToShow: 4,
+			// сколько слайд картинок показывать
+			slidesToScroll: 1,
+			// сколько слайд картинок перелистывать
+			prevArrow: '<div class="slider__photo-arrow div class="slider__photo-arrow__arrow-left"></div>',
+			nextArrow: '<div class="slider__photo-arrow div class="slider__photo-arrow__arrow-right"></div>',
+			asNavFor: '.slider__photo-top'
+			// связка с нижним слайдером
+		});
+	</script>
 </body>
 </html>
 
