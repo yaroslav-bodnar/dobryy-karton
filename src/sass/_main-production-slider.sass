@@ -1,0 +1,47 @@
+.production-slider
+	padding-bottom: 95px
+	&__photo
+		&-top
+		&-bottom
+			margin-top: 13px
+			padding-left: 25px
+			padding-right: 25px
+			img
+				padding-left: 5px
+				padding-right: 5px
+		&-arrow
+			position: absolute
+			top: 0
+			height: 100%
+			width: 22px
+			border: 1px solid $active-color
+			z-index: 99
+			&:hover
+				cursor: pointer
+			&__arrow-left
+				left: 0
+				background:#ffffff url(../img/main/production-sliders/arrow/arrow-yellow-left.jpg) center no-repeat
+				&:hover
+					background: $active-color url(../img/main/production-sliders/arrow/arrow-white-left.jpg) center no-repeat
+			&__arrow-right
+				right: 0
+				background:#ffffff url(../img/main/production-sliders/arrow/arrow-yellow-right.png) center no-repeat
+				&:hover
+					background: $active-color url(../img/main/production-sliders/arrow/arrow-white-right.png) center no-repeat
+	&__text
+		margin-top: -150px
+		&__title
+			// color: #ffffff
+			font-family: Roboto
+			font-size: 28px
+			font-weight: 400
+			line-height: 22px
+			background: $active-color
+			margin-left: -30px
+			padding: 20px 185px 20px 30px
+		&__description
+			color: #373737
+			font-family: Roboto
+			font-size: 16px
+			font-weight: 300
+			line-height: 24px
