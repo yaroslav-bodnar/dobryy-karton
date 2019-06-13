@@ -444,6 +444,53 @@ input:focus, button:focus {
       font-weight: 300;
       line-height: 24px; }
 
+.contacts {
+  position: relative; }
+  .contacts__form {
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    width: 313px;
+    min-height: 390px;
+    background: #ffffff;
+    padding: 33px 36px 39px 0px; }
+    .contacts__form__office-adress {
+      line-height: 25px; }
+      .contacts__form__office-adress p {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0px 0px 0px 33px; }
+      .contacts__form__office-adress span {
+        margin-left: 63px; }
+    .contacts__form__warehouse-address {
+      line-height: 25px; }
+      .contacts__form__warehouse-address p {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 25px 0px 0px 63px; }
+      .contacts__form__warehouse-address span {
+        margin-left: 63px; }
+    .contacts__form__sales-phone {
+      line-height: 25px; }
+      .contacts__form__sales-phone p {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 25px 0px 0px 33px; }
+      .contacts__form__sales-phone span {
+        margin-left: 63px; }
+      .contacts__form__sales-phone__button {
+        padding: 17px 24px;
+        margin-top: 14px;
+        margin-left: 63px; }
+    .contacts__form__e-mail {
+      line-height: 25px; }
+      .contacts__form__e-mail p {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 25px 0px 0px 33px; }
+      .contacts__form__e-mail span {
+        margin-left: 63px; }
+
 .reviews {
   background: #f4f4f4;
   padding: 55px 0px 71px 0px;
@@ -474,6 +521,25 @@ input:focus, button:focus {
       .reviews__slider__arrow__right {
         right: 0;
         background: url(../img/main/reviews/right-arrow.png) center no-repeat; }
+
+.footer {
+  background: black;
+  min-height: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .footer__text {
+    opacity: 0.5;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 17px; }
 
 body {
   background-color: #fff;
