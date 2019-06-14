@@ -21,6 +21,10 @@ $(document).ready(function(){
 		$('.dimming-popup-form').show()
 	});
 	
+	// if(typeof (window.innerWidth) == '768') {
+	// 	$('.dimming-popup-form').destroy()
+	// };
+
 	$('.dimming-popup-form__popup-form__close').on("click", function(){
 		$('.dimming-popup-form').hide()
 	});
