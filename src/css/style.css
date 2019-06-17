@@ -477,7 +477,7 @@ input:focus, button:focus {
     position: absolute;
     left: 20%;
     top: 10%;
-    width: 313px;
+    width: 320px;
     min-height: 390px;
     background: #ffffff;
     padding: 33px 36px 39px 0px; }
@@ -760,10 +760,62 @@ input:focus, button:focus {
     .our-clients__images__img {
       width: 143px;
       height: 87px;
-      margin-top: 7px; }
+      margin-top: 7px;
+      margin-left: 2px; }
       .our-clients__images__img img {
         max-width: 135px;
-        max-height: 80px; } }
+        max-height: 80px; }
+  .reviews {
+    margin-top: 36px;
+    padding: 36px 0px 40px 0px; }
+    .reviews__title__text {
+      font-size: 22px;
+      line-height: 24px; }
+    .reviews__title .hidden-mobile {
+      display: none; }
+    .reviews__slider {
+      max-width: 290px;
+      padding: 0px; }
+      .reviews__slider img {
+        max-width: 249px;
+        max-height: 355px;
+        padding: 0px; }
+      .reviews__slider__arrow {
+        border: solid #ff9d00 1px;
+        height: 78px;
+        top: 150px;
+        bottom: -39px; }
+        .reviews__slider__arrow__left {
+          left: 11px; }
+        .reviews__slider__arrow__right {
+          right: 11px; }
+  .contacts__form {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 30px auto;
+    text-align: center;
+    padding: 0px; }
+    .contacts__form__office-adress p {
+      margin: 0px; }
+    .contacts__form__office-adress span {
+      margin: 0px; }
+    .contacts__form__warehouse-address p {
+      margin: 25px 0px 0px 0px; }
+    .contacts__form__warehouse-address span {
+      margin: 0px; }
+    .contacts__form__sales-phone {
+      text-align: center; }
+      .contacts__form__sales-phone p {
+        margin: 25px 0px 0px 0px; }
+      .contacts__form__sales-phone span {
+        margin-left: 0px; }
+      .contacts__form__sales-phone__button {
+        margin: 20px auto; }
+    .contacts__form__e-mail p {
+      margin: 25px 0px 0px 0px; }
+    .contacts__form__e-mail span {
+      margin-left: 0px; } }
 
 .footer {
   background: black;
